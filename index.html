@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="tab">
+            <p id="lt" class="tabs" onclick="logintab()">Log In</p>
+            <p id="rt" class="tabs" onclick="registertab()">Register</p>
+        </div>
+        <br>
+        <br>
+        <div id="scont">
+            <div id="login" class="comm">
+                <h3>SIGN IN</h3>
+                <input id="se" type="email" placeholder="Email" required/>
+                <input id="sp" type="password" placeholder="Password" required/>
+                <input type="submit" onclick="login()" value="Submit"/>
+                <p class="fp" onclick="forgotTab()">Forget Password?</p>
+            </div>
+            <div id="register" class="comm">
+                <h3>Register</h3>
+                <input id="re" type="email" placeholder="Email" required/>
+                <input id="rp" type="password" placeholder="Password" required/>
+                <input id="rrp" type="password" placeholder="Re-write Password" required/>
+                <input type="submit" onclick="register()" value="Register"/>
+            </div>
+            <div id="forgot" class="comm">
+                <h3>Forgot Password</h3>
+                <input id="fe" type="email" placeholder="Email" required/>
+                <input type="submit" onclick="forgot()" value="Submit"/>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
